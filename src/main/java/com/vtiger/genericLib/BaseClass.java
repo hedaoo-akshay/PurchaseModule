@@ -36,7 +36,7 @@ public class BaseClass {
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	}
-	else if (browserValue.equalsIgnoreCase("firefox")) {
+	else if (browserValue.equalsIgnoreCase("Firefox")) {
 		System.setProperty(IPathConstant.FIREFOX_KEY, IPathConstant.FIREFOX_VALUE);
 		driver=new FirefoxDriver();
 		driver.manage().window().maximize();
