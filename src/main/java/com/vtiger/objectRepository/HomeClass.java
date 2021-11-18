@@ -19,7 +19,7 @@ import com.vtiger.genericLib.WebDriverUtility;
 public class HomeClass extends WebDriverUtility{
 	WebDriver driver;
 	public HomeClass(WebDriver driver)
-	{
+	{this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -50,7 +50,7 @@ public class HomeClass extends WebDriverUtility{
 		poLink.click();
 	}
 	public void signOutFromApp() throws Throwable
-	{ 
+	{ Thread.sleep(2000);
 		mouseHover(driver, adminImg);
 		Thread.sleep(2000);
 		signOutLink.click();	

@@ -3,15 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest">
+      <class name="com.practise.ExtentReport_CreateTest">
         <methods>
-          <include name="logout"/>
-          <include name="closeBrowser"/>
-          <include name="createPOwithItemWOqtyTest"/>
-          <include name="login"/>
-          <include name="openBrowser"/>
+          <include name="lanch_fb"/>
+          <include name="setupExtent"/>
+          <include name="closeSetup"/>
+          <include name="launch_vTiger"/>
         </methods>
-      </class> <!-- com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest -->
+      </class> <!-- com.practise.ExtentReport_CreateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

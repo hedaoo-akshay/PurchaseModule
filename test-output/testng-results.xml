@@ -1,231 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Qty cannot be empty]]>
-    </line>
   </reporter-output>
-  <suite started-at="2021-11-15T17:30:57 IST" name="Suite" finished-at="2021-11-15T17:33:04 IST" duration-ms="127608">
+  <suite started-at="2021-11-17T16:42:06 IST" name="Default suite" finished-at="2021-11-17T16:43:52 IST" duration-ms="106608">
     <groups>
     </groups>
-    <test started-at="2021-11-15T17:30:57 IST" name="Testrunner1" finished-at="2021-11-15T17:33:01 IST" duration-ms="124197">
-      <class name="com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest@1cbbffcd]" started-at="2021-11-15T17:30:57 IST" name="openBrowser" finished-at="2021-11-15T17:31:01 IST" duration-ms="4047" status="PASS">
+    <test started-at="2021-11-17T16:42:06 IST" name="Default test" finished-at="2021-11-17T16:43:52 IST" duration-ms="106608">
+      <class name="com.vtiger.purchaseorder.CreatePOwithMandatoryTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryTest@13fd2ccd]" started-at="2021-11-17T16:42:06 IST" name="openBrowser" finished-at="2021-11-17T16:42:08 IST" duration-ms="2934" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest@1cbbffcd]" started-at="2021-11-15T17:31:01 IST" name="login" finished-at="2021-11-15T17:31:24 IST" duration-ms="23200" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryTest@13fd2ccd]" started-at="2021-11-17T16:42:08 IST" name="login" finished-at="2021-11-17T16:42:45 IST" duration-ms="36316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createPOwithItemWOqtyTest()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest@1cbbffcd]" started-at="2021-11-15T17:31:24 IST" name="createPOwithItemWOqtyTest" finished-at="2021-11-15T17:32:50 IST" duration-ms="85764" status="PASS">
+        <test-method signature="createPOwithMandatoryTest()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryTest@13fd2ccd]" started-at="2021-11-17T16:42:45 IST" name="createPOwithMandatoryTest" finished-at="2021-11-17T16:43:46 IST" duration-ms="60760" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Qty cannot be empty]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- createPOwithItemWOqtyTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest@1cbbffcd]" started-at="2021-11-15T17:32:50 IST" name="logout" finished-at="2021-11-15T17:32:50 IST" duration-ms="8" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-at org.openqa.selenium.interactions.Actions.<init>(Actions.java:65)
-at com.vtiger.genericLib.WebDriverUtility.mouseHover(WebDriverUtility.java:61)
-at com.vtiger.objectRepository.HomeClass.signOutFromApp(HomeClass.java:53)
-at com.vtiger.genericLib.BaseClass.logout(BaseClass.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- createPOwithMandatoryTest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryTest@13fd2ccd]" started-at="2021-11-17T16:43:46 IST" name="logout" finished-at="2021-11-17T16:43:52 IST" duration-ms="6456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest@1cbbffcd]" started-at="2021-11-15T17:32:50 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1636977770333" status="SKIP">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryTest@13fd2ccd]" started-at="2021-11-17T16:43:52 IST" name="closeBrowser" finished-at="2021-11-17T16:43:52 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest -->
-      <class name="com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest@15c43bd9]" started-at="2021-11-15T17:30:57 IST" name="openBrowser" finished-at="2021-11-15T17:31:04 IST" duration-ms="7462" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest@15c43bd9]" started-at="2021-11-15T17:31:04 IST" name="login" finished-at="2021-11-15T17:31:23 IST" duration-ms="18933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createPOwithItemQtyListPriceTest()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest@15c43bd9]" started-at="2021-11-15T17:31:23 IST" name="createPOwithItemQtyListPriceTest" finished-at="2021-11-15T17:33:01 IST" duration-ms="97749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOwithItemQtyListPriceTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest@15c43bd9]" started-at="2021-11-15T17:33:01 IST" name="logout" finished-at="2021-11-15T17:33:01 IST" duration-ms="8" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-at org.openqa.selenium.interactions.Actions.<init>(Actions.java:65)
-at com.vtiger.genericLib.WebDriverUtility.mouseHover(WebDriverUtility.java:61)
-at com.vtiger.objectRepository.HomeClass.signOutFromApp(HomeClass.java:53)
-at com.vtiger.genericLib.BaseClass.logout(BaseClass.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest@15c43bd9]" started-at="2021-11-15T17:33:01 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1636977781438" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest -->
-    </test> <!-- Testrunner1 -->
-    <test started-at="2021-11-15T17:30:57 IST" name="Testrunner2" finished-at="2021-11-15T17:33:04 IST" duration-ms="127608">
-      <class name="com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest@5fdcaa40]" started-at="2021-11-15T17:30:57 IST" name="openBrowser" finished-at="2021-11-15T17:31:02 IST" duration-ms="4742" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest@5fdcaa40]" started-at="2021-11-15T17:31:02 IST" name="login" finished-at="2021-11-15T17:31:19 IST" duration-ms="17078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createPOwithMandatoryExceptItemTest()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest@5fdcaa40]" started-at="2021-11-15T17:31:19 IST" name="createPOwithMandatoryExceptItemTest" finished-at="2021-11-15T17:32:23 IST" duration-ms="64882" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOwithMandatoryExceptItemTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest@5fdcaa40]" started-at="2021-11-15T17:32:23 IST" name="logout" finished-at="2021-11-15T17:32:24 IST" duration-ms="12" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-at org.openqa.selenium.interactions.Actions.<init>(Actions.java:65)
-at com.vtiger.genericLib.WebDriverUtility.mouseHover(WebDriverUtility.java:61)
-at com.vtiger.objectRepository.HomeClass.signOutFromApp(HomeClass.java:53)
-at com.vtiger.genericLib.BaseClass.logout(BaseClass.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest@5fdcaa40]" started-at="2021-11-15T17:32:24 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1636977744027" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest -->
-      <class name="com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest@6dc17b83]" started-at="2021-11-15T17:30:57 IST" name="openBrowser" finished-at="2021-11-15T17:31:02 IST" duration-ms="4859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest@6dc17b83]" started-at="2021-11-15T17:31:02 IST" name="login" finished-at="2021-11-15T17:31:25 IST" duration-ms="23114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createPOwithItemWOlistPriceTest()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest@6dc17b83]" started-at="2021-11-15T17:31:25 IST" name="createPOwithItemWOlistPriceTest" finished-at="2021-11-15T17:33:04 IST" duration-ms="99584" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPOwithItemWOlistPriceTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest@6dc17b83]" started-at="2021-11-15T17:33:04 IST" name="logout" finished-at="2021-11-15T17:33:04 IST" duration-ms="6" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-at org.openqa.selenium.interactions.Actions.<init>(Actions.java:65)
-at com.vtiger.genericLib.WebDriverUtility.mouseHover(WebDriverUtility.java:61)
-at com.vtiger.objectRepository.HomeClass.signOutFromApp(HomeClass.java:53)
-at com.vtiger.genericLib.BaseClass.logout(BaseClass.java:60)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:831)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest@6dc17b83]" started-at="2021-11-15T17:33:04 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1636977784848" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest -->
-    </test> <!-- Testrunner2 -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.vtiger.purchaseorder.CreatePOwithMandatoryTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

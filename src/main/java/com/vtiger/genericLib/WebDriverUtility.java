@@ -29,7 +29,7 @@ import org.testng.annotations.Test;
 import com.google.common.io.Files;
 
 public class WebDriverUtility {
-//	public static WebDriver driver=null;
+	//	public static WebDriver driver=null;
 	@Test
 	public void selectByIndex(WebElement ele, int index)
 	{
@@ -57,7 +57,7 @@ public class WebDriverUtility {
 	}
 	public void mouseHover(WebDriver driver, WebElement element)
 	{
-		
+
 		Actions ac=new Actions(driver);
 		ac.moveToElement(element).perform();
 	}
@@ -65,7 +65,7 @@ public class WebDriverUtility {
 	{
 		Actions ac=new Actions(driver);
 		ac.doubleClick(element).perform();
-		
+
 	}
 	public void rightClick(WebDriver driver, WebElement element)
 	{
@@ -95,19 +95,19 @@ public class WebDriverUtility {
 		driver.manage().window().maximize();
 	}
 	public void switchToWindow(WebDriver driver, String partialWinTitle)
-    {
-    	Set<String> window = driver.getWindowHandles();
-    	Iterator<String> it = window.iterator();
-    	while(it.hasNext())
-    	{
-    		String winID=it.next();
-    		String title = driver.switchTo().window(winID).getTitle();
-    		if(title.contains(partialWinTitle))
-    		{
-    			break;
-    		}
-    	}
-    }
+	{
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		while(it.hasNext())
+		{
+			String winID=it.next();
+			String title = driver.switchTo().window(winID).getTitle();
+			if(title.contains(partialWinTitle))
+			{
+				break;
+			}
+		}
+	}
 	public void switchToFrame(WebDriver driver, int index)
 	{
 		driver.switchTo().frame(index);
@@ -122,37 +122,21 @@ public class WebDriverUtility {
 	}
 	public String takesScreenshot(WebDriver driver,  String screenshotName) throws IOException
 	{	String current_date = new Date().toString().replace(" ", "_");
-	    String screenshotpath="./screenshot/"+screenshotName+current_date+".PNG";
-		TakesScreenshot ts = (TakesScreenshot)driver;
-		File src = ts.getScreenshotAs(OutputType.FILE);
-		File dest= new File(screenshotpath);
-		Files.copy(src, dest);
-		return screenshotpath;
-		
+	String screenshotpath="./screenshot/"+screenshotName+current_date+".PNG";
+	TakesScreenshot ts = (TakesScreenshot)driver;
+	File src = ts.getScreenshotAs(OutputType.FILE);
+	File dest= new File(screenshotpath);
+	Files.copy(src, dest);
+	return screenshotpath;
+
 	}
 	public void scrollToWebElement(WebDriver driver, WebElement element)
-    {
+	{
 		Point loc=element.getLocation();
-    	JavascriptExecutor js = (JavascriptExecutor)driver;
-    	js.executeScript("window.scrollBy"+loc);
-    }
-//	public void openBrowser(String browser)
-//	{  WebDriver driver=null;
-//		if(browser.equalsIgnoreCase("chrome"))
-//		{
-//		System.setProperty(IPathConstant.CHROME_KEY, IPathConstant.CHROME_VALUE);
-//		driver=new ChromeDriver();
-//		}
-//		else if (browser.equalsIgnoreCase("firefox")) {
-//			System.setProperty(IPathConstant.FIREFOX_KEY, IPathConstant.FIREFOX_VALUE);
-//			driver=new FirefoxDriver();
-//		}
-//		
-//	}
-//	public void closeBrowser(WebDriver driver)
-//	{
-//		driver.close();
-//	}
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy"+loc);
+	}
+
 	public void sendKeys( WebDriver driver, WebElement textbox, String value, String script)
 	{
 		if(textbox.isEnabled())
@@ -161,34 +145,14 @@ public class WebDriverUtility {
 		}
 		else
 		{
-			
+
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript(script);
 		}
-			
+
 	}
-//	public void openBrowserWithoutBrowserNotification(String browser)
-//	{
-//		if(browser.equalsIgnoreCase("chrome"))
-//		{
-//		System.setProperty(IPathConstant.CHROME_KEY, IPathConstant.CHROME_VALUE);
-//		ChromeOptions co = new ChromeOptions();
-//		co.addArguments("--disable-notifications");
-//		WebDriver driver=new ChromeDriver(co);
-//		
-//		}
-//		else if (browser.equalsIgnoreCase("firefox")) {
-//			System.setProperty(IPathConstant.FIREFOX_KEY, IPathConstant.FIREFOX_VALUE);
-//			FirefoxOptions fo = new FirefoxOptions();
-//			fo.addArguments("--disable-notifications");
-//			WebDriver driver =new FirefoxDriver(fo);
-//		}
-//		else
-//		{
-//			System.out.println("Enter Proper Browser Name.");
-//		}
-//	}
-	
-	
-	
+
+
+
+
 }

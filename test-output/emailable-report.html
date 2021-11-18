@@ -8,61 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Testrunner1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">124,197</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Testrunner2</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">127,608</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">251,805</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">106,608</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Testrunner1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest</td><td><a href="#m0">logout</a></td><td rowspan="1">1636977781427</td><td rowspan="1">8</td></tr><tr class="failedodd"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest</td><td><a href="#m1">logout</a></td><td rowspan="1">1636977770320</td><td rowspan="1">8</td></tr><tr><th colspan="4">Testrunner1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest</td><td><a href="#m2">closeBrowser</a></td><td rowspan="1">1636977781438</td><td rowspan="1">-1636977781438</td></tr><tr class="skippedodd"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest</td><td><a href="#m3">closeBrowser</a></td><td rowspan="1">1636977770333</td><td rowspan="1">-1636977770333</td></tr><tr><th colspan="4">Testrunner1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest</td><td><a href="#m4">createPOwithItemQtyListPriceTest</a></td><td rowspan="1">1636977683674</td><td rowspan="1">97749</td></tr><tr class="passedodd"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest</td><td><a href="#m5">createPOwithItemWOqtyTest</a></td><td rowspan="1">1636977684554</td><td rowspan="1">85764</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Testrunner2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest</td><td><a href="#m6">logout</a></td><td rowspan="1">1636977784837</td><td rowspan="1">6</td></tr><tr class="failedodd"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest</td><td><a href="#m7">logout</a></td><td rowspan="1">1636977743992</td><td rowspan="1">12</td></tr><tr><th colspan="4">Testrunner2 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest</td><td><a href="#m8">closeBrowser</a></td><td rowspan="1">1636977784848</td><td rowspan="1">-1636977784848</td></tr><tr class="skippedodd"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest</td><td><a href="#m9">closeBrowser</a></td><td rowspan="1">1636977744027</td><td rowspan="1">-1636977744027</td></tr><tr><th colspan="4">Testrunner2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest</td><td><a href="#m10">createPOwithItemWOlistPriceTest</a></td><td rowspan="1">1636977685252</td><td rowspan="1">99584</td></tr><tr class="passedodd"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest</td><td><a href="#m11">createPOwithMandatoryExceptItemTest</a></td><td rowspan="1">1636977679101</td><td rowspan="1">64882</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.vtiger.purchaseorder.CreatePOwithMandatoryTest</td><td><a href="#m0">createPOwithMandatoryTest</a></td><td rowspan="1">1637147565281</td><td rowspan="1">60760</td></tr></tbody>
 </table>
-<h2>Testrunner1</h2><h3 id="m0">com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)
-	at com.vtiger.genericLib.WebDriverUtility.mouseHover(WebDriverUtility.java:61)
-	at com.vtiger.objectRepository.HomeClass.signOutFromApp(HomeClass.java:53)
-	at com.vtiger.genericLib.BaseClass.logout(BaseClass.java:60)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)
-	at com.vtiger.genericLib.WebDriverUtility.mouseHover(WebDriverUtility.java:61)
-	at com.vtiger.objectRepository.HomeClass.signOutFromApp(HomeClass.java:53)
-	at com.vtiger.genericLib.BaseClass.logout(BaseClass.java:60)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.vtiger.purchaseorder.CreatePOwithItemQtyListPriceTest#createPOwithItemQtyListPriceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.vtiger.purchaseorder.CreatePOwithItemWOqtyTest#createPOwithItemWOqtyTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Qty cannot be empty</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Testrunner2</h2><h3 id="m6">com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)
-	at com.vtiger.genericLib.WebDriverUtility.mouseHover(WebDriverUtility.java:61)
-	at com.vtiger.objectRepository.HomeClass.signOutFromApp(HomeClass.java:53)
-	at com.vtiger.genericLib.BaseClass.logout(BaseClass.java:60)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at java.base/java.util.Objects.requireNonNull(Objects.java:208)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:65)
-	at com.vtiger.genericLib.WebDriverUtility.mouseHover(WebDriverUtility.java:61)
-	at com.vtiger.objectRepository.HomeClass.signOutFromApp(HomeClass.java:53)
-	at com.vtiger.genericLib.BaseClass.logout(BaseClass.java:60)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.vtiger.purchaseorder.CreatePOwithItemWOlistPriceTest#createPOwithItemWOlistPriceTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.vtiger.purchaseorder.CreatePOwithMandatoryExceptItemTest#createPOwithMandatoryExceptItemTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.vtiger.purchaseorder.CreatePOwithMandatoryTest#createPOwithMandatoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
